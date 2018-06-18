@@ -1,0 +1,14 @@
+<html>
+	<title>Flask with templates</title>
+	{% set name = "Thein Mwe Phu" %}
+	{% set username = "TheinMwePhu" %}
+	<body>
+		<ul>
+			<li>{{name}}</li>
+			<li><img src="{{ url_for('static', filename='pwafire128white.png') }}" /></li>
+			<li><a href="https://github.com/{{username}}">Github</a></li>
+			<li><a href="https://{{username}}.herokuapp.com">Heroku</a></li>
+		</ul>
+	</body>
+</html>
+
